@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./index.module.sass"
 
-function Index() {
+export const Services = () => {
     return (
         <div className={styles.services}>
             <div className={styles.container}>
@@ -42,5 +42,3 @@ function Index() {
         </div>
     )
 }
-
-export default Index
