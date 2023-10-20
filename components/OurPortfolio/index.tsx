@@ -1,6 +1,5 @@
 import React from 'react'
-import styles from "./index.module.sass";
-import Link from 'next/link';
+import styles from "./index.module.sass"; 
 
 export const Portfolio = () => {
     return (
