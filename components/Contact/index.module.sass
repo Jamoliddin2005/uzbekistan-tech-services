@@ -1,0 +1,61 @@
+@import ../../styles/variables, ../../styles/mixins
+
+.contact
+    @include container
+    color: $colorWhite
+    padding-top: 140px
+    padding-bottom: 270px
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+    &__right
+        width: 40%
+
+    &__left
+        width: 40%
+
+    &__title
+        @include title
+        margin-bottom: 80px
+
+    &__top
+
+        p
+            @include font(24px, $colorWhite, medium)
+            margin-bottom: 60px
+
+    textarea
+        width: 100%
+        resize: none
+        height: 280px
+        border-radius: 2px
+        background: transparent
+        outline: none
+        border: 1px solid $colorWhite
+        padding: 20px
+        @include font(20px, $colorWhite, regular)
+
+    &__right
+
+        input
+            border: none
+            border-bottom: 1px solid #5B5B5B
+            background: transparent
+            width: 100%
+            outline: none
+            padding-bottom: 20px
+            padding-top: 20px
+            @include font(20px, #5B5B5B, regular)
+
+        button
+            width: 100%
+            border-radius: 2px
+            border: 1px solid $colorWhite
+            background: transparent
+            cursor: pointer
+            padding: 23px
+            margin-top: 150px
+            @include font(20px, #5B5B5B, regular)
