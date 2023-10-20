@@ -1,0 +1,53 @@
+@import ../../styles/variables, ../../styles/mixins
+.header
+    &__container
+        @include container
+        color: $colorWhite
+        padding-top: 200px
+    &__row
+        @include row
+        justify-content: space-between
+    &__left
+        width: 50%
+        h3
+            @include font(40px, $colorWhite, regular)
+            margin-bottom: 40px
+            text-transform: uppercase
+        p
+            @include font(24px, $colorWhite, light)
+            line-height: 40px
+            margin-bottom: 120px
+        button
+            height: 53px
+            border: 2px solid $colorWhite
+            background: transparent
+            @include font(24px, $colorWhite, light)
+            width: 277px
+            cursor: pointer
+            text-align: left
+            position: relative
+            padding-left: 22px
+            &:after
+                content: ""
+                width: 76px
+                height: 100%
+                background: #90F594
+                position: absolute
+                top: 0
+                left: 0
+                display: block
+                z-index: -1
+                transition: .5s
+            &:hover
+                &:after
+                    width: 100%
+    &__right
+        width: 45%
+        &__top
+            display: flex
+            justify-content: space-between
+            margin-bottom: 20px
+            a
+                @include font(18px, $colorWhite, light)
+        img
+            width: 100%
