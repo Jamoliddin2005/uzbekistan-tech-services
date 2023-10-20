@@ -1,0 +1,33 @@
+@import ../../styles/variables, ../../styles/mixins
+
+.footer
+    @include container
+    color: $colorWhite
+    padding-bottom: 80px
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        gap: 150px
+
+    &__item
+        a
+            @include font(20px, $colorWhite, regular)
+        p
+            @include font(14px, $colorWhite, regular)
+            width: 300px
+
+        ul
+            display: flex
+            align-items: center
+            gap: 10px
+
+    &__title
+        @include font(24px, $colorWhite, medium)
+        margin-bottom: 30px
+        display: flex
+        align-items: center
+        &:last-child
+            cursor: pointer
+        svg
+            margin-left: 10px
