@@ -5,7 +5,8 @@ import Link from 'next/link';
 
 export const Navbar = () => {
     return (
-        <div className={styles.navbar}>
+        <div className={styles.navbar}          data-aos="fade-down"
+        data-aos-duration="1300">
             <div className={styles.navbar__container}>
                 <div className={styles.navbar__row}>
                     <div className={styles.navbar__left}>

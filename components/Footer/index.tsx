@@ -3,7 +3,11 @@ import styles from "./index.module.sass";
 
 export const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <div
+      className={styles.footer}
+      data-aos="fade-down"
+      data-aos-duration="1300"
+    >
       <div className={styles.container}>
         <div className={styles.footer__row}>
           <div className={styles.footer__item}>
